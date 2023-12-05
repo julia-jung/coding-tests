@@ -1,0 +1,10 @@
+{
+  "name": "coding-tests",
+  "version": "1.0.0",
+  "description": "Coding Test Practice",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

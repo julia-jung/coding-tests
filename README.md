@@ -1,1 +1,1 @@
-My [Leetcode](https://leetcode.com/) study records
+Coding Test Practice to prepare interview questions and improve problem solving skill
