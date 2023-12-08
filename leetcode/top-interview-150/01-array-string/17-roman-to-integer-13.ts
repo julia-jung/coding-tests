@@ -14,9 +14,9 @@
  */
 
 // Solution: 
-// Iterate string by each charactor and add value representing the roman charactor
+// Iterate string and add integer representing the each roman charactor one by one
 // But when the number is smaller than the later one, it needs to be subtracted
-function romanToInt2(s: string): number {
+function romanToInt(s: string): number {
   const mapper = {
     'I': 1,
     'V': 5,
@@ -28,7 +28,7 @@ function romanToInt2(s: string): number {
   };
 
   let result = 0;
-  for(let i = 0; i < s.length; i++){
+  for (let i = 0; i < s.length; i++){
     if (i === s.length - 1 || mapper[s[i]] >= mapper[s[i+1]]) {
       result += mapper[s[i]];
     } else {
@@ -37,6 +37,10 @@ function romanToInt2(s: string): number {
   }
   return result;
 };
+
+romanToInt('III'); //3
+romanToInt('LVIII'); // 58
+romanToInt('MCMXCIV'); // 1994
 
 // Failed
 function romanToIntFailed(s: string): number {

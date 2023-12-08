@@ -17,7 +17,7 @@ map([1,2,3], (n) => n + 1); // [2,3,4]
 map([1,2,3], (n, i) => n + i); // [1,3,5]
 map([10,20,30], () => 42); [42,42,42]
 
-// Solution 1: using forEach()
+// Solution 2: using forEach()
 function map2(arr: number[], fn: (n: number, i: number) => number): number[] {
   const transformedArr: number[] = [];
   arr.forEach((num, i) => {
