@@ -2,9 +2,13 @@
  Do not return anything, modify nums in-place instead.
  */
 
-// Solution 1
+// Solution 1: reverse 3 times seperating array into two part
 function rotate(nums: number[], k: number): void {
   k %= nums.length; // if k is greater than nums.length then one cycle is completed that means it will remain the same and we have to remainder shifts
+  reverse(nums, 0, nums.length - 1); // reverse the whole array -> [7,6,5,4,3,2,1]
+  reverse(nums, 0, k - 1); // reserve first part before k from start -> [5,6,7,4,3,2,1]
+  reverse(nums, k, nums.length - 1); // reverse second part from k till the end -> [5,6,7,1,2,3,4]
+  
   function reverse(nums: number[], start: number, end: number): void {
     while (start < end) {
       const temp = nums[start];
@@ -12,14 +16,9 @@ function rotate(nums: number[], k: number): void {
       nums[end--] = temp;
     }
   }
-  reverse(nums, 0, nums.length - 1); // reverse the whole array
-  reverse(nums, 0, k - 1); // reserve first part before k from start
-  reverse(nums, k, nums.length - 1); // reverse second part from k till the end
 };
 
-
-
- // Solution 2
+ // Solution 2: save later part in temp array and substitute in-place
 function rotate2(nums: number[], k: number): void {
   const temp = [];
   k %= nums.length;
@@ -31,7 +30,7 @@ function rotate2(nums: number[], k: number): void {
   }
 };
 
-// Solution 3
+// Solution 3: using array alter methods (not in-place substitution)
 function rotate3(nums: number[], k: number): void {
   for(var i = 0; i < k; i++) {
     nums.unshift(nums.pop())
