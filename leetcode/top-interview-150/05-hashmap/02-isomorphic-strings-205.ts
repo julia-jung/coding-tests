@@ -30,6 +30,11 @@ function isIsomorphic(s: string, t: string): boolean {
   return true;
 };
 
+isIsomorphic('egg', 'add'); // true
+isIsomorphic('foo', 'bar'); // false
+isIsomorphic('paper', 'title'); // true
+
+
 // Solution 2: using two Map
 function isIsomorphic2(s: string, t: string): boolean {
   if (s.length != t.length) return false;
@@ -51,7 +56,7 @@ function isIsomorphic2(s: string, t: string): boolean {
     tToSMap.set(tChar, sChar);
   }
 
-   return true;
+  return true;
 };
 
 // Solution 3: build maps first and compare values
