@@ -1,3 +1,3 @@
-## In-Place
+#### Sort array
 
-https://en.wikipedia.org/wiki/In-place_algorithm
+- To find common prefix of words in the array, then compare first and last

@@ -8,6 +8,7 @@ function longestCommonPrefix(strs: string[]): string {
   let commonPrefix = '';
 
   const sorted = strs.sort();
+  // If array is sorted, common prefix for first and last string is also applied to others
   const first = sorted[0];
   const last = sorted[strs.length - 1];
 

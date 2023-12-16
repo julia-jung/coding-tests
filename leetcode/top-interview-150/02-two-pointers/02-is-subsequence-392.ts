@@ -21,6 +21,9 @@ function isSubsequence(s: string, t: string): boolean {
   return i === s.length;
 };
 
+isSubsequence('abc', 'ahbgdc'); // true
+isSubsequence('axc', 'ahbgdc'); // false
+
 // Solution 2: iterating "s", move pointer of "t" if condition is not satisfied
 function isSubsequence2(s: string, t: string): boolean {
   let i = 0;

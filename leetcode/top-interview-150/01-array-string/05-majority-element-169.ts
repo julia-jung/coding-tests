@@ -49,3 +49,13 @@ function majorityElement3(nums: number[]): number {
 
   return major;
 };
+
+// Solution 4: using new Map()
+function majorityElement4(nums: number[]): number {
+  const map = new Map();
+  for (const num of nums) {
+    const occurence = (map.get(num) ?? 0) + 1;
+    if (occurence > nums.length / 2) return num;
+    map.set(num, occurence);
+  }
+}
