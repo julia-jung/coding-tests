@@ -21,3 +21,7 @@
 
 - 부호 비트가 없기 때문에 모든 비트를 숫자의 표현에 사용한다.
 - 1 byte(=8 bit)는 0(`00000000`)에서 +255(`11111111`)까지의 숫자를 표현할 수 있다.
+
+### [Hamming weight](https://en.wikipedia.org/wiki/Hamming_weight)
+
+: The Hamming weight of a string is the number of symbols that are different from the zero-symbol of the alphabet used. It is thus equivalent to the Hamming distance from the all-zero string of the same length.

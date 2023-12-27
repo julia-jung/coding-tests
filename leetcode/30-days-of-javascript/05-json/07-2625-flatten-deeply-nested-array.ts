@@ -24,6 +24,10 @@ var flat = function (arr:  MultiDimensionalArray, n: number):  MultiDimensionalA
   return flattened;
 };
 
+flat([1, 2, 3, [4, 5, 6], [7, 8, [9, 10, 11], 12], [13, 14, 15]], 0); // [1, 2, 3, [4, 5, 6], [7, 8, [9, 10, 11], 12], [13, 14, 15]]
+flat([1, 2, 3, [4, 5, 6], [7, 8, [9, 10, 11], 12], [13, 14, 15]], 1); // [1, 2, 3, 4, 5, 6, 7, 8, [9, 10, 11], 12, 13, 14, 15]
+flat([[1, 2, 3], [4, 5, 6], [7, 8, [9, 10, 11], 12], [13, 14, 15]], 2); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+
 // Solution 2: iterate arr n times
 var flat = function (arr:  MultiDimensionalArray, n: number):  MultiDimensionalArray {
   if (n === 0) return arr;
