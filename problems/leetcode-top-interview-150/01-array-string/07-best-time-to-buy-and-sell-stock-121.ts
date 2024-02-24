@@ -4,6 +4,9 @@
  * Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
  */
 
+maxProfit([7,1,5,3,6,4]); //5
+maxProfit([7,6,4,3,1]); //0
+
 // Solution 1: while loop iterating with index
 function maxProfit(prices: number[]): number {
   let profit = 0;
@@ -15,8 +18,10 @@ function maxProfit(prices: number[]): number {
   while(sell < prices.length) {
     const currentProfit = prices[sell] - prices[buy]; 
     if (currentProfit > 0) {
+      // if we find profitable case, 
       profit = Math.max(profit, currentProfit);
     } else {
+      // if we find the lower price than the price we are currently buying
       buy = sell;
     }
     sell++;
@@ -24,9 +29,6 @@ function maxProfit(prices: number[]): number {
 
   return profit;
 };
-
-maxProfit([7,1,5,3,6,4]); //5
-maxProfit([7,6,4,3,1]); //0
 
 // Solution 2: For-of loop iterating items
 function maxProfit2(prices: number[]): number {

@@ -25,15 +25,15 @@ function productExceptSelf(numArray) {
   // 배열의 마지막 요소(16)는 이미 원하는 값으로 완성되었다. 따라서 다음 step에서 1만 곱하면 된다
 	for (var x = 0; x < size; x++) {
 		output.push(product);
-		product = product * numArray[x];
+		product *= numArray[x];
 	}
 
   // 2. 배열 요소의 오른쪽 요소들의 곱을 구해서 output배열에 곱하면 자기자신을 뺀 나머지 요소의 곱이 된다
 	// 앞서 구해놓은 output 배열의 뒤에서부터 순서대로 해당 요소의 오른쪽 요소들의 곱으로 곱해준다
 	var product = 1;
 	for (var i = size - 1; i > -1; i--) {
-		output[i] = output[i] * product;
-		product = product * numArray[i];
+		output[i] *= product;
+		product *= numArray[i];
 	}
 
   return output;

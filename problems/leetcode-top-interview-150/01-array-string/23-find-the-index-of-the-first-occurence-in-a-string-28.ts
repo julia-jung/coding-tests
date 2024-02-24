@@ -3,6 +3,9 @@
  * or -1 if needle is not part of haystack.
  */
 
+strStr('sadbutsad', 'sad'); // 0
+strStr('leetcode', 'leeto'); // -1
+
 // Solution 1: looping string
 function strStr(haystack: string, needle: string): number {
   for (let i = 0 ; i < haystack.length; i++) {
@@ -16,8 +19,6 @@ function strStr(haystack: string, needle: string): number {
   return -1;
 };
 
-strStr('sadbutsad', 'sad'); // 0
-strStr('leetcode', 'leeto'); // -1
 
 // Solution 2: using built-in String method
 function strStr2(haystack: string, needle: string): number {

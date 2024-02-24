@@ -3,6 +3,9 @@
  * If there is no common prefix, return an empty string "".
  */
 
+longestCommonPrefix(['flower', 'flow', 'flight']); // 'fl'
+longestCommonPrefix(['dog', 'racecar', 'car']); // ''
+
 // Solution 1: sort array lexicographically then compare first and last elements
 function longestCommonPrefix(strs: string[]): string {
   let commonPrefix = '';
@@ -21,9 +24,6 @@ function longestCommonPrefix(strs: string[]): string {
 
   return commonPrefix;
 };
-
-longestCommonPrefix(['flower', 'flow', 'flight']); // 'fl'
-longestCommonPrefix(['dog', 'racecar', 'car']); // ''
 
 // Solution 2: set the first element as common and find common with the rest elements
 function longestCommonPrefix2(strs: string[]): string {

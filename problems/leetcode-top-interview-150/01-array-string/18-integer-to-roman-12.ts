@@ -2,6 +2,9 @@
  * Given an integer, convert it to a roman numeral.
  */
 
+intToRoman(3); // 'III'
+intToRoman(58); // 'LVIII'
+intToRoman(1994); // 'MCMXCIV'
 
 // Solution 1: using Map
 function intToRoman(num: number): string {
@@ -66,7 +69,3 @@ function intToRoman2(num: number): string {
 
   return roman;
 };
-
-intToRoman(3); // 'III'
-intToRoman(58); // 'LVIII'
-intToRoman(1994); // 'MCMXCIV'

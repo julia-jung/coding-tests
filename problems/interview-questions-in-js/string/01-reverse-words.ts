@@ -10,7 +10,7 @@ var string = "Welcome to this Javascript Guide!";
 reverseWords(string);
 
 function reverseWords(string) {
-  // 1) 전체 문장을 뒤집고 나서 단어별로 나눠서 각 단어 뒤집기
+  // 1) 전체 문장을 뒤집고 나서 단어별로 나눠서 각 단어 뒤집기 "!ediuG tpircsavaJ siht ot emocleW"
   // return reverseBySeparator(reverseBySeparator(string, ""), " "); // "emocleW ot siht tpircsavaJ !ediuG"
 
   // OR 

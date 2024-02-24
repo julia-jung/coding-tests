@@ -4,6 +4,10 @@
  * Given a string s, return true if it is a palindrome, or false otherwise.
  */
 
+isPalindrome("A man, a plan, a canal: Panama"); // true
+isPalindrome("race a car"); // false
+isPalindrome(" "); // true
+
 // Solution 1: replacing with RegExp
 function isPalindrome(s: string): boolean {
   const convertedStr = s.toLowerCase().replace(/[^0-9a-z]/gi, '');
