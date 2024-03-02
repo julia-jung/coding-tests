@@ -13,10 +13,10 @@ function isValid(s: string): boolean {
 
   for (const c of s) {
     if (open.includes(c)) {
-      stack.push(open.findIndex(p => p === c));
+      stack.push(open.findIndex(p => p === c)); // push index of open array
     }
     if (close.includes(c)) {
-      if (stack.pop() !== close.findIndex(p => p === c)) return false;
+      if (stack.pop() !== close.findIndex(p => p === c)) return false; // ensure it match with checking indexes
     }
   }
   return stack.length === 0;
