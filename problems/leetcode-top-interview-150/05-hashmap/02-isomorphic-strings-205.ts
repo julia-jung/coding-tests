@@ -5,6 +5,10 @@
  * No two characters may map to the same character, but a character may map to itself.
  */
 
+isIsomorphic('egg', 'add'); // true
+isIsomorphic('foo', 'bar'); // false
+isIsomorphic('paper', 'title'); // true
+
 // Solution 1: using one Map
 function isIsomorphic(s: string, t: string): boolean {
   if (s.length != t.length) return false;
@@ -29,11 +33,6 @@ function isIsomorphic(s: string, t: string): boolean {
 
   return true;
 };
-
-isIsomorphic('egg', 'add'); // true
-isIsomorphic('foo', 'bar'); // false
-isIsomorphic('paper', 'title'); // true
-
 
 // Solution 2: using two Map
 function isIsomorphic2(s: string, t: string): boolean {

@@ -4,6 +4,9 @@
  * typically using all the original letters exactly once.
  */
 
+isAnagram('anagram', 'nagaram'); // true
+isAnagram('rat', 'car'); // false
+
 // Solution 1: same with "ransomeNote" but additionally check both maps sizes are same
 function isAnagram(s: string, t: string): boolean {
   if (s.length !== t.length) return false;
@@ -24,10 +27,6 @@ function isAnagram(s: string, t: string): boolean {
 
   return true;
 };
-
-isAnagram('anagram', 'nagaram'); // true
-isAnagram('rat', 'car'); // false
-
 
 // Solution 2: add count from first string, substract from second one then check all values are 0
 function isAnagram2(s: string, t: string): boolean {

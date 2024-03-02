@@ -3,6 +3,10 @@
  * such that nums[i] == nums[j] and abs(i - j) <= k.
  */
 
+containsNearbyDuplicate([1, 2, 3, 1], 3); // true
+containsNearbyDuplicate([1, 0, 1, 1], 1); // true
+containsNearbyDuplicate([1, 2, 3, 1, 2, 3], 2); // false
+
 function containsNearbyDuplicate(nums: number[], k: number): boolean {
   const map = new Map();
 
@@ -15,7 +19,3 @@ function containsNearbyDuplicate(nums: number[], k: number): boolean {
   }
   return false;
 };
-
-containsNearbyDuplicate([1, 2, 3, 1], 3); // true
-containsNearbyDuplicate([1, 0, 1, 1], 1); // true
-containsNearbyDuplicate([1, 2, 3, 1, 2, 3], 2); // false

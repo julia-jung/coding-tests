@@ -3,6 +3,10 @@
  * Each letter in magazine can only be used once in ransomNote.
  */
 
+canConstruct('a', 'b'); // false
+canConstruct('aa', 'ab'); // false
+canConstruct('aa', 'aab'); // true
+
 // Solution 1: using one map
 function canConstruct(ransomNote: string, magazine: string): boolean {
   const map = new Map();
@@ -21,10 +25,6 @@ function canConstruct(ransomNote: string, magazine: string): boolean {
 
   return true;
 };
-
-canConstruct('a', 'b'); // false
-canConstruct('aa', 'ab'); // false
-canConstruct('aa', 'aab'); // true
 
 // Solution 2: using 2 maps for both string
 function canConstruct2(ransomNote: string, magazine: string): boolean {

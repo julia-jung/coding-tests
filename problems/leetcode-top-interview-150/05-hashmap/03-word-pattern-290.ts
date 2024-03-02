@@ -3,6 +3,10 @@
  * Here follow means a full match, such that there is a bijection between a letter in pattern and a non-empty word in s.
  */
 
+wordPattern('abba', 'dog cat cat dog'); // true
+wordPattern('abba', 'dog cat cat fish'); // false
+wordPattern('aaaa', 'dog cat cat dog'); // false
+
 function wordPattern(pattern: string, s: string): boolean {
   const words = s.trim().split(' ');
   if (pattern.length !== words.length) return false;
@@ -20,7 +24,3 @@ function wordPattern(pattern: string, s: string): boolean {
 
   return true;
 };
-
-wordPattern('abba', 'dog cat cat dog'); // true
-wordPattern('abba', 'dog cat cat fish'); // false
-wordPattern('aaaa', 'dog cat cat dog'); // false
