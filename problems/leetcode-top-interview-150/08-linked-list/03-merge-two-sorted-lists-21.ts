@@ -1,9 +1,20 @@
-import ListNode from "./ListNode";
+/** ⭐
+ * You are given the heads of two sorted linked lists list1 and list2.
+ * Merge the two lists into one sorted list. The list should be made by splicing together the nodes of the first two lists.
+ * Return the head of the merged linked list.
+ */
+
+import ListNode from "../../../data-structures/linked-list/ListNode";
+
+// list1 = [1,2,4], list2 = [1,3,4] -> output = [1,1,2,3,4,4]
+// list1 = [], list2 = [] -> output = []
+// list1 = [], list2 = [0] -> output = [0]
 
 // Solution 1: recursion
 function mergeTwoLists(list1: ListNode | null, list2: ListNode | null): ListNode | null {
   if (list1 === null) return list2;
   if (list2 === null) return list1;
+  
   if (list1.val < list2.val) {
     list1.next = mergeTwoLists(list1.next, list2);
     return list1;
@@ -12,10 +23,6 @@ function mergeTwoLists(list1: ListNode | null, list2: ListNode | null): ListNode
     return list2;
   }
 };
-
-// [1,2,4] + [1,3,4] = [1,1,2,3,4,4]
-// [] + [] = []
-// [] + [0] = [0]
 
 // Solution 2: while loop
 function mergeTwoLists2(list1: ListNode | null, list2: ListNode | null): ListNode | null {

@@ -5,7 +5,7 @@
  * Note that pos is not passed as a parameter.
  * Return true if there is a cycle in the linked list. Otherwise, return false.
  */
-import ListNode from "./ListNode";
+import ListNode from "../../../data-structures/linked-list/ListNode";
 
 // Solution 1: if the track is circular, faster person always catch the slower person after some cycle
 function hasCycle(head: ListNode | null): boolean {
@@ -26,7 +26,7 @@ function hasCycle2(head: ListNode | null): boolean {
 
   while (head) {
     if (set.has(head)) {
-        return true;
+      return true;
     }
     set.add(head);
     head = head.next;
