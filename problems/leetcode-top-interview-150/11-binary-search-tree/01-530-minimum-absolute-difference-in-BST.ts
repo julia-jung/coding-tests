@@ -1,7 +1,7 @@
 /** ⭐
  * Given the root of a Binary Search Tree (BST), return the minimum absolute difference between the values of any two different nodes in the tree.
  */
-import TreeNode from "../09-binary-tree-general/TreeNode";
+import TreeNode from "../../../data-structures/binary-tree/TreeNode";
 
 // find minimum difference between adjacent nodes traversing inorder
 function getMinimumDifference(root: TreeNode | null): number {

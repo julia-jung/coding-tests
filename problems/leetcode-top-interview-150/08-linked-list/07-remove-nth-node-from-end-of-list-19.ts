@@ -10,7 +10,7 @@ import ListNode from "../../../data-structures/linked-list/ListNode";
 
 // Solution 1: get length first then iterate until length - n
 function removeNthFromEnd(head: ListNode | null, n: number): ListNode | null {
-  if (head === null) return null;
+  if (!head || !head.next) return null;
 
   let length = 0;
   let curNode = head;
@@ -18,8 +18,6 @@ function removeNthFromEnd(head: ListNode | null, n: number): ListNode | null {
     curNode = curNode.next;
     length++;
   }
-
-  if (length === 1) return null;
 
   let index = length - n;
   if (index === 0) return head.next;

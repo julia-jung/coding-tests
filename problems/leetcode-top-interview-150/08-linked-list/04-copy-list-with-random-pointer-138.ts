@@ -17,11 +17,11 @@
  */
 
 // Definition for Node.
-class Node {
+class NodeRandom {
   val: number
-  next: Node | null
-  random: Node | null
-  constructor(val?: number, next?: Node, random?: Node) {
+  next: NodeRandom | null
+  random: NodeRandom | null
+  constructor(val?: number, next?: NodeRandom, random?: NodeRandom) {
     this.val = (val===undefined ? 0 : val)
     this.next = (next===undefined ? null : next)
     this.random = (random===undefined ? null : random)
@@ -33,16 +33,16 @@ class Node {
 // head = [[3,null],[3,0],[3,null]] -> [[3,null],[3,0],[3,null]]
 
 // Solution 1: using map (extra space)
-function copyRandomList(head: Node | null): Node | null {
+function copyRandomList(head: NodeRandom | null): NodeRandom | null {
   if (head === null) return null;
   
-  const copyHead = new Node();
+  const copyHead = new NodeRandom();
   let curNode = copyHead;
 
   const map = new Map();
 
   while (head) {
-    const copy = new Node(head.val);
+    const copy = new NodeRandom(head.val);
     map.set(head, copy); // map the original node with the copied one
 
     curNode.next = copy;
@@ -66,14 +66,14 @@ function copyRandomList(head: Node | null): Node | null {
 };
 
 // Solution2: with no extra space (insert new one in the original linked list and separate them later)
-function copyRandomList2(head: Node | null): Node | null {
+function copyRandomList2(head: NodeRandom | null): NodeRandom | null {
   if (!head) return null;
 
   let curNode = head;
   // iterating original linked list,
   // insert copied node right next to the original one
   while (curNode) {
-    let curCopy = new Node(curNode.val);
+    let curCopy = new NodeRandom(curNode.val);
 
     curCopy.next = curNode.next; // link next original node into curCopy.next
     curNode.next = curCopy; // insert copy into cur original node

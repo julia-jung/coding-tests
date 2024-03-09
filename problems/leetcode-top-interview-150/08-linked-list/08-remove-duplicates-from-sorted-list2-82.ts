@@ -26,7 +26,7 @@ function deleteDuplicates(head: ListNode | null): ListNode | null {
   
   while (curNode && curNode.next) {
     let nextNode = curNode.next;
-    // if skip all next nodes having map value more than 1
+    // skip all next nodes having map value more than 1
     while (nextNode && map.get(nextNode.val) > 1) {
       nextNode = nextNode.next;
     }

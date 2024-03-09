@@ -4,7 +4,7 @@
  * A leaf is a node with no children.
  */
 
-import TreeNode from "./TreeNode";
+import TreeNode from "../../../data-structures/binary-tree/TreeNode";
 
 function hasPathSum(root: TreeNode | null, targetSum: number): boolean {
   if (!root) return false;
