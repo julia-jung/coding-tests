@@ -17,6 +17,9 @@ class TreeLinkNode {
     }
 }
 
+// root = [1,2,3,4,5,null,7] -> output = [1,#,2,3,#,4,5,7,#]
+// root = [] -> output = []
+
 // left와 right를 연결해야 되기 때문에 left따로 right 따로 재귀를 못돌림. 
 // linked list 풀듯이 while문으로 연결해야 함
 function connect(root: TreeLinkNode | null): TreeLinkNode | null {

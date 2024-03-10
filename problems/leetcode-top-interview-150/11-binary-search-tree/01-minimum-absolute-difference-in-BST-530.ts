@@ -1,7 +1,15 @@
 /** ⭐
- * Given the root of a Binary Search Tree (BST), return the minimum absolute difference between the values of any two different nodes in the tree.
+ * Given the root of a Binary Search Tree (BST), return the minimum absolute difference 
+ * between the values of any two different nodes in the tree.
  */
 import TreeNode from "../../../data-structures/binary-tree/TreeNode";
+
+// [236,104,701,null,227,null,911]
+// inorder(104): prev = null -> 104
+// inorder(227): prev = 104 -> 227 / min = 227 - 104 = 123
+// inorder(236): prev = 227 -> 236 / min = 236 - 227 = 9
+// inorder(701): prev = 236 -> 701 / min = 701 - 236 = 465
+// inorder(911): prev = 701 -> 911 / min = 911 - 701 = 210
 
 // find minimum difference between adjacent nodes traversing inorder
 function getMinimumDifference(root: TreeNode | null): number {
@@ -13,25 +21,21 @@ function getMinimumDifference(root: TreeNode | null): number {
   function searchInorder(node: TreeNode | null): number {
     if (!node) return min;
 
+    // left
     searchInorder(node.left);
 
+    // root
     if (prev !== null) {
       min = Math.min(min, node.val - prev);
     }
     prev = node.val;
 
+    // right
     searchInorder(node.right);
     
     return min;
   }
 };
-
-// [236,104,701,null,227,null,911]
-// inorder(104): prev = null -> 104
-// inorder(227): prev = 104 -> 227 / min = 227 - 104 = 123
-// inorder(236): prev = 227 -> 236 / min = 236 - 227 = 9
-// inorder(701): prev = 236 -> 701 / min = 701 - 236 = 465
-// inorder(911): prev = 701 -> 911 / min = 911 - 701 = 210
 
 
 // Failed Case: [236,104,701,null,227,null,911]

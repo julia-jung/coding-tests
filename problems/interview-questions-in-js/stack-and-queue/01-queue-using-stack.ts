@@ -6,7 +6,7 @@
  * - dequeue 함수는 output stack의 가장 뒤 item을 반환하도록
  * - 만약 output stack이 비어있으면 input stack을 확인해서 item을 뒤에서부터 꺼내어 아래에 차곡차곡 쌓아서 output stack에 넣기
  */
-class Queue {
+class QueueWithStack {
   private inputStack = [];
   private outputStack = [];
   
@@ -27,7 +27,7 @@ class Queue {
 
 }
 
-const queue = new Queue();
+const queue = new QueueWithStack();
 queue.enqueue(1);
 queue.enqueue(2);
 console.log(queue.dequeue()); // 1 (inputStack = [])
