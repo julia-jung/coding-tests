@@ -20,7 +20,7 @@ function minSubArrayLen(target: number, nums: number[]): number {
     sum += nums[j++];
     // if the j reaches to the point that sum gets bigger than target
     while (sum >= target) {
-      // update count how how many was added up to the sum (update with min value)
+      // update count how many was added up to the sum (update with min value)
       count = Math.min(count, j - i);
       // subtract ith index value from sum
       sum -= nums[i++];
@@ -28,13 +28,13 @@ function minSubArrayLen(target: number, nums: number[]): number {
   }
 
   return count === Number.MAX_VALUE ? 0 : count;
-};
+}
 
 // Time Limit Exceeded (Time complexity: O(n^2))
 function minSubArrayLenFailed(target: number, nums: number[]): number {
   const sums = [nums[0]]; // sums from 0 index until it's position in nums array
   let count = Number.MAX_VALUE;
-  
+
   for (let i = 1; i < nums.length; i++) {
     sums[i] = sums[i - 1] + nums[i];
   }
@@ -43,15 +43,14 @@ function minSubArrayLenFailed(target: number, nums: number[]): number {
     for (let j = i; j < nums.length; j++) {
       const sum = sums[j] - sums[i] + nums[i];
       if (sum >= target) {
-        count = Math.min(count, (j - i + 1));
+        count = Math.min(count, j - i + 1);
         break;
       }
     }
   }
 
   return count === Number.MAX_VALUE ? 0 : count;
-};
-
+}
 
 function minSubArrayLenWrong(target: number, nums: number[]): number {
   nums.sort((a, b) => a - b);
@@ -60,7 +59,7 @@ function minSubArrayLenWrong(target: number, nums: number[]): number {
 
   let remain = target;
   let count = 0;
-  
+
   let i = nums.length - 1;
   while (i >= 0 && remain > 0) {
     remain -= nums[i--];
@@ -68,4 +67,4 @@ function minSubArrayLenWrong(target: number, nums: number[]): number {
   }
 
   return remain > 0 ? 0 : count;
-};
+}
