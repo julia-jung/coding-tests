@@ -18,39 +18,42 @@ function search(nums: number[], target: number): number {
     return nums[0] === target ? 0 : -1;
   }
 
-  // do the binary search
   let start = 0;
   let end = nums.length - 1;
 
-  while (start <= end) {
-    // 1. find the mid
-    const mid = Math.floor((end + start) / 2);
+  while (start < end) {
+    const mid = start + Math.floor((end - start) / 2);
 
     if (nums[mid] === target) return mid;
 
-    // 2. at least one part is ordered
+    // at least one part is ordered
     // so check the cases, and see if the target is in the ordered part
-    if (nums[start] <= nums[mid]) {
-      // if the left part is ordered
+
+    // if the left part is ordered
+    if (nums[mid] >= nums[start]) {
+      // and the target is in the left part
       if (target < nums[mid] && target >= nums[start]) {
-        // if the target is in the ordered part
-        end = mid - 1;
+        // drop the right part
+        end = mid;
       } else {
+        // otherwise drop the left part
         start = mid + 1;
       }
     }
 
+    // if the right part is ordered
     if (nums[mid] <= nums[end]) {
-      // if the right part is ordered
+      // and the target is in the right part
       if (target > nums[mid] && target <= nums[end]) {
-        // if the target is in the ordred part
+        // then drop the left part
         start = mid + 1;
       } else {
-        end = mid - 1;
+        // otherwise drop the right part
+        end = mid;
       }
     }
   }
-  return -1;
+  return nums[start] === target ? start : -1;
 }
 
 function search2(nums: number[], target: number): number {
