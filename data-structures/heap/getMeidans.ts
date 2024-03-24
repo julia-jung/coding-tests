@@ -1,5 +1,5 @@
-import MaxHeap from "./MaxHeap";
-import MinHeap from "./MinHeap";
+import MaxHeap from './MaxHeap';
+import MinHeap from './MinHeap';
 
 /**
  * Median for the array is, (when the array is sorted)
@@ -12,7 +12,7 @@ export function getMedians(arr: number[]): number[] {
    * Implementation :
    * seperate the array into two heaps
    * one with lower values in form of Max Heap
-   * the other with higher values in form of Min Heap 
+   * the other with higher values in form of Min Heap
    * Make sure keep them to have maximum size difference of 1
    * Then either bigger heaps head or the average of two heaps heads will be the median
    */
@@ -23,8 +23,8 @@ export function getMedians(arr: number[]): number[] {
 
   for (let i = 0; i < arr.length; i++) {
     const val = arr[i];
-    add(val, lowers, highers);
-    rebalance(lowers, highers);
+    add(val, lowers, highers); // add val in one heap to have lower with smaller values and higher with larger values
+    rebalance(lowers, highers); // to make them have max size difference of 1,
     medians[i] = getMedian(lowers, highers);
   }
   return medians;
@@ -32,6 +32,7 @@ export function getMedians(arr: number[]): number[] {
 
 function add(val: number, lowers: MinHeap, highers: MaxHeap): void {
   if (lowers.getSize() === 0 || val < lowers.peek()) {
+    // if it's smaller than the top of lower heap
     lowers.add(val);
   } else {
     highers.add(val);
@@ -53,7 +54,7 @@ function getMedian(lowers: MinHeap, highers: MaxHeap): number {
   const smallerHeap = lowers.getSize() > highers.getSize() ? highers : lowers;
 
   if (biggerHeap.getSize() === smallerHeap.getSize()) {
-    return (biggerHeap.peek() + smallerHeap.peek()) / 2
+    return (biggerHeap.peek() + smallerHeap.peek()) / 2;
   } else {
     return biggerHeap.peek();
   }

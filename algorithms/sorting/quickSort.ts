@@ -4,7 +4,7 @@ function quickSort(arr: number[]) {
    * How to implement Quick Sort
    *
    * 1. randomly pick the pivot elements(mostly in the middle)
-   * 2. set two pointers(left pointer from the start of the array and right pointer at the end of the array)
+   * 2. set two pointers from both end
    * 3. move the left pointer forward until you find the value which is greater than the pivot element
    * 4. move the right pointer backward until you find the value which is smaller than the pivot element
    * 5. then swap two elements at the pointers
@@ -15,7 +15,7 @@ function quickSort(arr: number[]) {
   function sort(arr: number[], left: number, right: number) {
     if (left >= right) return;
 
-    const pivot = arr[Math.floor((left + right) / 2)];
+    const pivot = Math.floor((left + right) / 2);
     const index = partition(arr, left, right, pivot);
 
     sort(arr, left, index - 1);
@@ -27,9 +27,10 @@ function quickSort(arr: number[]) {
       right: number,
       pivot: number
     ) {
+      // move all elements samller than pivots to it's left and larger elements to it's right
       while (left <= right) {
-        while (arr[left] < pivot) left++;
-        while (arr[right] > pivot) right--;
+        while (arr[left] < arr[pivot]) left++; // find the element which is greater than pivot from the left
+        while (arr[right] > arr[pivot]) right--; // find the element which is smaller than pivot from the right
 
         if (left <= right) {
           swap(arr, left, right);

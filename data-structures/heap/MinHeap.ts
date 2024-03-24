@@ -50,10 +50,13 @@ export default class MinHeap {
    */
   public poll(): number | null {
     if (this.items.length === 0) return null;
-
+    if (this.items.length === 1) {
+      return this.items.pop();
+    }
     const head = this.items[0];
     const tail = this.items.pop();
     this.items[0] = tail;
+    // get the tail to top and reorder walking down finding it's right position
     this.heapifyDown();
 
     return head;
@@ -65,21 +68,29 @@ export default class MinHeap {
    */
   public add(item: number): void {
     this.items.push(item);
+    // find the right position walking from the bottom up until the top
     this.heapifyUp();
   }
 
   public heapifyDown(): void {
+    // walk through from the top
     let i = 0;
 
     while (this.hasLeftChild(i)) {
+      // find the smaller child
       let smallerChildIndex = this.getLeftChildIndex(i);
-      if (this.hasRightChild(i) && this.getRightChild(i) < this.getLeftChild(i)) {
+      if (
+        this.hasRightChild(i) &&
+        this.getRightChild(i) < this.getLeftChild(i)
+      ) {
         smallerChildIndex = this.getRightChildIndex(i);
       }
-
+      // then compare it with current(parent)
       if (this.items[i] < this.items[smallerChildIndex]) {
+        // if parent < child it's already ordered
         break;
       } else {
+        // if parent > child they need to be swaped
         this.swap(i, smallerChildIndex);
       }
       i = smallerChildIndex;
@@ -87,8 +98,10 @@ export default class MinHeap {
   }
 
   public heapifyUp(): void {
+    // walk up until the top from the bottom
     let i = this.items.length - 1;
 
+    // if we meet parent larger than current(child), swap
     while (this.hasParent(i) && this.getParent(i) > this.items[i]) {
       const parentIndex = this.getParentIndex(i);
       this.swap(parentIndex, i);
