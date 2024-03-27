@@ -2,6 +2,9 @@
  * Given two binary strings a and b, return their sum as a binary string.
  */
 
+// Input: a = "11", b = "1" -> Output: "100"
+// Input: a = "1010", b = "1011" -> Output: "10101"
+
 // Solution 1: change string into reversed array then iterate to sum until both ends
 function addBinary(a: string, b: string): string {
   const arrA = a.split('').reverse();
@@ -18,4 +21,4 @@ function addBinary(a: string, b: string): string {
     i++;
   }
   return arr.reverse().join('');
-};
+}

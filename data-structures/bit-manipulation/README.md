@@ -42,8 +42,7 @@
 - Arithmetic Right Shift (`a >> b`) : shift `a` to the right with amount of `b` and fill in the empty bits on the left with maximum bit value
   - result = a / 2^(b)
 - Logical Right Shift (`a >>> b`) : shift `a` to the right with amount of `b` and fill in the empty bits on the left with `0`
-  - if `a` is positive, result = a / 2^(b)
-  - if `a` is negative, result is not a / 2^(b)
+  - This operation is also called "zero-filling right shift", because the sign bit becomes 0, so the resulting number is always positive.
 
 ## Bit Manipulation
 
