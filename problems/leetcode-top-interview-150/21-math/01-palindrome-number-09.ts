@@ -2,6 +2,10 @@
  * Given an integer x, return true if x is a palindrome, and false otherwise.
  */
 
+isPalindrome(121); // true
+isPalindrome(-121); // false ("-121" !== "121-")
+isPalindrome(10); // false ("10" !== "01")
+
 function isPalindrome(x: number): boolean {
   if (x < 0) return false;
 
@@ -13,10 +17,7 @@ function isPalindrome(x: number): boolean {
     if (s[left++] !== s[right--]) return false;
   }
   return true;
-};
-isPalindrome(121); // true
-isPalindrome(-121); // false ("-121" !== "121-")
-isPalindrome(10); // false ("10" !== "01")
+}
 
 // Solution 2: using one var
 function isPalindrome2(x: number): boolean {
@@ -30,4 +31,4 @@ function isPalindrome2(x: number): boolean {
     i++;
   }
   return true;
-};
+}
