@@ -1,7 +1,5 @@
 # Data Structures and Algorithms
 
-# Data Structures & Algorithms in TypeScript
-
 ## Topics Overview
 
 ### Algorithmic Complexity Analysis
@@ -12,21 +10,21 @@
 
 ### Data Structures
 
-- [] Arrays
-- [] Hash Tables
-- [] Linked Lists
-- [] Stacks/Queues
-- [] Trees
-- [] Graphs
+- [ ] Arrays
+- [ ] Hash Tables
+- [ ] Linked Lists
+- [ ] Stacks/Queues
+- [ ] Trees
+- [ ] Graphs
 
 ### Algorithms
 
-- [] Recursion
-- [] Sorting
-- [] Searching
-  - [] Linear & Binary Search
-  - [] BFS & DFS
-- [] Dynamic Programming
+- [ ] Recursion
+- [ ] Sorting
+- [ ] Searching
+  - [ ] Linear & Binary Search
+  - [ ] BFS & DFS
+- [ ] Dynamic Programming
 
 ## Resources
 
