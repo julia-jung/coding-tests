@@ -33,7 +33,7 @@
 2. Remove Constants\
    `O(2n + 1) => O(n)`
 
-3. Different terms for inputs\
+3. Different terms for inputs
 
 - Different inputs should have different variables: O(a + b).
 - A and B arrays nested would be: O(a \* b)
