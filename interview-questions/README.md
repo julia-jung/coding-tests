@@ -7,24 +7,24 @@
 > Will you be able to solve the company's problem?
 
 - But it's not necessarily about the solution to a problem
-- It's about the thought process and knowing the tradeoffs between data structures and alrogithms, space and time complexity
+- It's about **the thought process** and knowing the tradeoffs between data structures and alrogithms, space and time complexity
 
 ### What are companys looking for
 
-1. Analytic Skills\
-   How can you think through problems and analyze things?
-2. Coding Skills\
-   Do you code well, by writing clean, simple, organized, readable code?
-3. Technical Skills\
-   Do you know the fundamentals of the job you're applying for?\
-   or Do you just memorize the solutions?
-4. Communication Skills\
-   Does your personality match the companies’ culture?\
-   Can you communicate with others in a team
+1. **Analytic Skills**\
+   : How can you think through problems and analyze things?
+2. **Coding Skills**\
+   : Do you code well, by writing clean, simple, organized, readable code?
+3. **Technical Skills**\
+   : Do you know the fundamentals of the job you're applying for? or Do you just memorize the solutions?
+4. **Communication Skills**\
+   :Does your personality match the companies’ culture? Can you communicate with others in a team?
 
 ### [Technical Interview Mindmap](https://coggle.it/diagram/W5E5tqYlrXvFJPsq/t/master-the-interview-click-here-for-course-link/c25f98c73a03f5b1107cd0e2f4bce29c9d78e31655e55cb0b785d56f0036c9d1)
 
-## How to solve Coding Problems
+## How to Solve Coding Problems
+
+### Coding Interview Tips
 
 - Don't jump into coding right away. Ask for clarification:
 
@@ -79,7 +79,7 @@
   - The interviewer may ask you about scale, such as how you would handle the problem if the whole input is too large to fit into memory.
   - The asnwer is usually a divide-and-conquer approach
 
-### How to approach solving problems
+### How to Approach Solving Problems
 
 - **Hash Maps** are usually the answer to improve Time Complexity
 
@@ -91,7 +91,7 @@
 
 - Look at the Time vs Space tradeoff. Sometimes storing extra state in memeory can help the time
 
-## Recourse
+## Resources
 
 [How to: Work at Google — Example Coding/Engineering Interview](https://www.youtube.com/watch?v=XKu_SEDAykw)\
 [ZTM - Interview Cheat Sheet]()
