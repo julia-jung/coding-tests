@@ -6,7 +6,7 @@
 
 | Algorithm        | Average Case | Worst Case |
 | ---------------- | ------------ | ---------- |
-| Acess            | O(1)         | O(1)       |
+| Access           | O(1)         | O(1)       |
 | Search           | O(n)         | O(n)       |
 | Insertion        | O(n)         | O(n)       |
 | Deletion         | O(n)         | O(n)       |
@@ -48,7 +48,7 @@ The only drawback is that whenever it's not at the absolute end of the array, we
 - Slow deletes
 - Fixed size (\*If using static array)
 
-## Interview Questions
+## Related Questions
 
 - [ ] [Two Sum](https://leetcode.com/problems/two-sum/description/)
 
