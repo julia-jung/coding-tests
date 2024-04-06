@@ -2,12 +2,13 @@
 
 ## Concept
 
-### Time Complexity
+### Time/Space Complexity
 
 | Algorithm        | Average Case | Worst Case |
 | ---------------- | ------------ | ---------- |
-| Access           | O(1)         | O(1)       |
+| Lookup           | O(1)         | O(1)       |
 | Search           | O(n)         | O(n)       |
+| Append           | O(1)         | O(1)       |
 | Insertion        | O(n)         | O(n)       |
 | Deletion         | O(n)         | O(n)       |
 | Space Complexity | O(1)         | O(n)       |
@@ -30,23 +31,26 @@
 - Static Array: is with fixed size (Java, C++)
 - Dynamic Array: allows us to copy and rebuild an array at a new location, which with more memory (Javascript, Python)
 
+<br />
+
 ## When to use
-
-Having something organized and close to each other in memory speeds up processing because it is organized.
-
-The only drawback is that whenever it's not at the absolute end of the array, we have to shift to race, which makes inserts and deletions take longer
 
 ### Good at:
 
 - Fast loopups
 - Fast push/pop
-- Ordered
+- Ordered\
+   : Having something organized and close to each other in memory speeds up processing because it is organized.
 
 ### Bad at:
+
+The only drawback is that whenever it's not at the absolute end of the array, we have to shift to race, which makes inserts and deletions take longer
 
 - Slow insert
 - Slow deletes
 - Fixed size (\*If using static array)
+
+<br />
 
 ## Related Questions
 

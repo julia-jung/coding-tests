@@ -26,11 +26,11 @@ A collision occurs when two keys get mapped to the same index. There are several
 - Map and set allows any types
 - Set only stores key
 
-### Time Complexity
+### Time/Space Complexity
 
 | Algorithm        | Average Case | Worst Case |
 | ---------------- | ------------ | ---------- |
-| Access           | O(1)         | O(1)       |
+| Lookup           | O(1)         | O(1)       |
 | Search           | O(1)         | O(n)       |
 | Insertion        | O(1)         | O(n)       |
 | Deletion         | O(1)         | O(n)       |
@@ -44,7 +44,7 @@ A collision occurs when two keys get mapped to the same index. There are several
 
 | Algorithm        | HashTable | Array |
 | ---------------- | --------- | ----- |
-| Access           | O(1)      | O(1)  |
+| Lookup           | O(1)      | O(1)  |
 | **Search**       | **O(1)**  | O(n)  |
 | **Insertion**    | **O(1)**  | O(n)  |
 | **Deletion**     | **O(1)**  | O(n)  |
@@ -70,5 +70,5 @@ A collision occurs when two keys get mapped to the same index. There are several
 
 ## Resources
 
-[Hash Table - Wikipedia](https://en.wikipedia.org/wiki/Hash_table)
+[Hash Table - Wikipedia](https://en.wikipedia.org/wiki/Hash_table)\
 [Hash Table Collision visualization](https://www.cs.usfca.edu/~galles/visualization/OpenHash.html)

@@ -54,5 +54,5 @@ Each language has their data structures to hold different types of data. Some la
 ## Resources
 
 [Data Structure - Wikipedia](https://en.wikipedia.org/wiki/List_of_data_structures)\
-[Data Structure Cheat Sheet](https://zerotomastery.io/cheatsheets/data-structures-and-algorithms-cheat-sheet/#what-are-data-structures)
+[Data Structure Cheat Sheet](https://zerotomastery.io/cheatsheets/data-structures-and-algorithms-cheat-sheet/#what-are-data-structures)\
 [Register and RAM - Youtube](https://www.youtube.com/watch?v=fpnE6UAfbtU)
