@@ -1,5 +1,3 @@
-
-
 // Implementation of Queue with two Stacks
 class Queue {
   private stack = [];
@@ -12,22 +10,24 @@ class Queue {
   public shiftStacks() {
     if (this.reverseStack.length === 0) {
       while (this.stack.length >= 0) {
+        // pull the latest item first and push into the reverseStack
+        // so that the oldest comes at last
         this.reverseStack.push(this.stack.pop());
       }
     }
   }
-  public peek() { // get oldest item
+
+  // get oldest item
+  public peek() {
     this.shiftStacks();
     // get last item in reverseStack
     return this.reverseStack.slice(-1);
   }
 
-
-  public dequeue() { // get oldest item and remove it
+  // get oldest item and remove it
+  public dequeue() {
     this.shiftStacks();
     // remove last item from reverseStack
     return this.reverseStack.pop();
   }
-
 }
-
