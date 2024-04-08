@@ -1,7 +1,7 @@
 /** ⭐
  * Given an integer array nums where the elements are sorted in ascending order, convert it to a height-balanced binary search tree.
  */
-import TreeNode from '../../../data-structures/binary-tree/TreeNode';
+import TreeNode from '../../../data-structures/tree/TreeNode';
 
 sortedArrayToBST([-10, -3, 0, 5, 9]); // [0,-3,9,-10,null,5]
 sortedArrayToBST([1, 3]); // [3,1]

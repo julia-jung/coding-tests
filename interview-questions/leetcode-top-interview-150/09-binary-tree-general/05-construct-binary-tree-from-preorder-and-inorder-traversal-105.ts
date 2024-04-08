@@ -1,9 +1,9 @@
 /** ⭐⭐
- * Given two integer arrays preorder and inorder where preorder is the preorder traversal of a binary tree 
+ * Given two integer arrays preorder and inorder where preorder is the preorder traversal of a binary tree
  * and inorder is the inorder traversal of the same tree, construct and return the binary tree.
  */
 
-import TreeNode from "../../../data-structures/binary-tree/TreeNode";
+import TreeNode from '../../../data-structures/tree/TreeNode';
 
 // preorder = [3,9,20,15,7], inorder = [9,3,15,20,7] -> output = [3,9,20,null,null,15,7]
 // preorder = [-1], inorder = [-1] -> output = [-1]
@@ -31,13 +31,13 @@ function buildTree(preorder: number[], inorder: number[]): TreeNode | null {
     root.right = helper(mid + 1, end);
 
     return root;
-  }
+  };
 
   return helper(0, inorder.length - 1);
-};
+}
 
 function buildTree2(preorder: number[], inorder: number[]): TreeNode | null {
-  return build(0, 0, inorder.length - 1);  
+  return build(0, 0, inorder.length - 1);
 
   function build(preStart: number, inStart: number, inEnd: number) {
     if (preStart > preorder.length - 1 || inStart > inEnd) {
@@ -50,13 +50,12 @@ function buildTree2(preorder: number[], inorder: number[]): TreeNode | null {
     // i is at root
     const leftSize = i - inStart;
 
-
     root.left = build(preStart, inStart, i - 1);
     root.right = build(preStart + leftSize, i + 1, inEnd);
-    
+
     return root;
   }
-};
+}
 
 function buildTree3(preorder: number[], inorder: number[]): TreeNode | null {
   let p = 0;
@@ -74,4 +73,4 @@ function buildTree3(preorder: number[], inorder: number[]): TreeNode | null {
     root.right = build(val);
     return root;
   }
-};
+}

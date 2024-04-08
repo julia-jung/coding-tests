@@ -1,10 +1,9 @@
 /** ⭐⭐
- * Given two integer arrays inorder and postorder where inorder is the inorder traversal of a binary tree 
+ * Given two integer arrays inorder and postorder where inorder is the inorder traversal of a binary tree
  * and postorder is the postorder traversal of the same tree, construct and return the binary tree.
  */
 
-import TreeNode from "../../../data-structures/binary-tree/TreeNode";
-
+import TreeNode from '../../../data-structures/tree/TreeNode';
 
 function buildTree(inorder: number[], postorder: number[]): TreeNode | null {
   // last index of postorder is root
@@ -24,13 +23,16 @@ function buildTree(inorder: number[], postorder: number[]): TreeNode | null {
     root.right = helper(iMid + 1, iEnd, p);
 
     return root;
-  }
+  };
 
   return helper(0, inorder.length - 1, postorder.length - 1);
-};
+}
 
 // Failed: Same as with preorder + inorder problem solution
-function buildTreeFailed(inorder: number[], postorder: number[]): TreeNode | null {
+function buildTreeFailed(
+  inorder: number[],
+  postorder: number[]
+): TreeNode | null {
   // last index of postorder is root
   const map = new Map();
   for (let i = 0; i < inorder.length; i++) {
@@ -49,7 +51,7 @@ function buildTreeFailed(inorder: number[], postorder: number[]): TreeNode | nul
     root.right = helper(mid + 1, end);
 
     return root;
-  }
+  };
 
   return helper(0, inorder.length - 1);
-};
+}

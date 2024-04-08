@@ -1,8 +1,8 @@
 /** ⭐
- * Given the root of a Binary Search Tree (BST), return the minimum absolute difference 
+ * Given the root of a Binary Search Tree (BST), return the minimum absolute difference
  * between the values of any two different nodes in the tree.
  */
-import TreeNode from "../../../data-structures/binary-tree/TreeNode";
+import TreeNode from '../../../data-structures/tree/TreeNode';
 
 // [236,104,701,null,227,null,911]
 // inorder(104): prev = null -> 104
@@ -32,19 +32,18 @@ function getMinimumDifference(root: TreeNode | null): number {
 
     // right
     searchInorder(node.right);
-    
+
     return min;
   }
-};
-
+}
 
 // Failed Case: [236,104,701,null,227,null,911]
 function getMinimumDifferenceFailed(root: TreeNode | null): number {
   if (!root) return 0;
-  
+
   const queue = [root];
   let min = 10000;
-  
+
   while (queue.length > 0) {
     const node = queue.shift();
     if (node.left) {
@@ -58,8 +57,7 @@ function getMinimumDifferenceFailed(root: TreeNode | null): number {
   }
 
   return min;
-};
-
+}
 
 // post-order L(left) R(right) N(node)
 // pre-order N L R

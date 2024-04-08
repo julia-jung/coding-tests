@@ -1,16 +1,16 @@
 /** ⭐
  * Given the root of a complete binary tree, return the number of the nodes in the tree.
- * According to Wikipedia, every level, except possibly the last, is completely filled in a complete binary tree, 
+ * According to Wikipedia, every level, except possibly the last, is completely filled in a complete binary tree,
  * and all nodes in the last level are as far left as possible. It can have between 1 and 2h nodes inclusive at the last level h.
  * Design an algorithm that runs in less than O(n) time complexity.
  */
-import TreeNode from "../../../data-structures/binary-tree/TreeNode";
+import TreeNode from '../../../data-structures/tree/TreeNode';
 
 // Solution 1: count all from left to right
 function countNodes(root: TreeNode | null): number {
   if (!root) return 0;
   return 1 + countNodes(root.left) + countNodes(root.right);
-};
+}
 
 // Solution 2: compare left, right subtree heights to decide if they are full binary tree
 function countNodes2(root: TreeNode | null): number {
@@ -28,10 +28,10 @@ function countNodes2(root: TreeNode | null): number {
     leftCount = countNodes2(root.left); // count of left-subtree can get recursively
     rightCount = 2 ** (height - 2) - 1; // right-subtree is a full-tree of height "fullHeight - 2"
   }
-  
+
   return 1 + leftCount + rightCount;
 
   function getHeight(root: TreeNode | null): number {
     return root ? 1 + getHeight(root.left) : 0;
   }
-};
+}

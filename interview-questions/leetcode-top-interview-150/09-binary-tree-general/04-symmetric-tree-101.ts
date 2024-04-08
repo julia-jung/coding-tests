@@ -2,7 +2,7 @@
  * Given the root of a binary tree, check whether it is a mirror of itself (i.e., symmetric around its center).
  */
 
-import TreeNode from "../../../data-structures/binary-tree/TreeNode";
+import TreeNode from '../../../data-structures/tree/TreeNode';
 
 // [1,2,2,3,4,4,3] => true
 // [1,2,2,null,3,null,3] => false
@@ -15,6 +15,10 @@ function isSymmetric(root: TreeNode | null): boolean {
   function mirror(left: TreeNode | null, right: TreeNode | null): boolean {
     if (!left && !right) return true;
     if (!left || !right) return false;
-    return left.val === right.val && mirror(left.left, right.right) && mirror(left.right, right.left);
+    return (
+      left.val === right.val &&
+      mirror(left.left, right.right) &&
+      mirror(left.right, right.left)
+    );
   }
-};
+}
