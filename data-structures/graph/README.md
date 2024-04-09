@@ -1,21 +1,83 @@
-## Undirected Graph
+# Data Structure - Graph
 
-: 방향이 없는 그래프
+## Concept
 
-## Directed Graph
+> A Graph data structure is a collection of nodes (Trees are type of Graph). But unlike with trees, there are no rules about how nodes should be connected.
 
-: 방향이 있는 그래프
+- There are no root, parent, or child nodes in Graph
+- Nodes are called _vertices_ and they are connected by _edges_
+  - Usually, Graph have more edges than vertices, and it its called dense graph
+  - If Edges are less than vertices, it is called sparse graph
 
-### Topological Sort
+### Directed vs. Undirected Graph
 
-: 순서가 정해져 있는 일련의 작업을 차례대로 수행해야 할 때 사용할수 있는 알고리즘
+- If the edges are directional, it is called Directed Graph(or Digraph)
+- If edges are all bidirectional, it is called Undirected Graph(or unordered graph or just graph) and has no implied direction on edges between the nodes. Edge can be traversed in either direction. By default, graphs are assumed to be unordered.
 
-- ‘사이클이 없는 방향 그래프의 모든 노드를 방향성에 거스르지 않도록 순서대로 나열 하는 것’
-  - 진입차수(Indegree): 특정노드로 들어오는 간서의 개수
-  - 진출차수(Outdegree): 특정 노드에서 나가는 간선의 개수
-- 정렬방법
-  1. 진입차수가 0인 노드를 큐에 넣고
-  2. 큐가 빌 때까지 다음 반복
-  - 큐에서 원소를 꺼내어 해당 노드에서 나가는 간선을 그래프에서 제거
-  - 새롭게 진입차수가 0이 된 노드를 큐에 삽입
-  3. 노드가 큐에 들어온 순서가 위상정렬 결과가 된다.
+### Weighted vs. Unweighted Graph
+
+- If edges have weights, it is called Weighted Graph. Edges have numbers that typically shows the cost of traversing in a graph.
+  - We can find the minimum cost of traversing the graph by finding the path that has the least sum of weights.
+
+### Cyclic vs. Acyclic Graph
+
+- In Cyclic graphs starting vertex also serves as the final vertex.
+- Trees are Acyclic Graphs that includes a path from the starting vertex(the root) to some other vertex.
+
+<br />
+
+## Representing Graphs
+
+A Graph can be represented using 3 data structures
+
+- Edge List
+  ```js
+  const graph = [
+    [0, 2],
+    [2, 3],
+    [2, 1],
+    [1, 3],
+  ];
+  // 0-2 connected
+  // 2-3 connected
+  // 2-1 connected
+  // 1-3 coneected
+  ```
+- Adjacency List
+  ```js
+  const graph = [[2], [2, 3], [0, 1, 3], [1, 2]];
+  // 0 => connected to 2
+  // 1 => connected to 2 and 3
+  // 2 => connected to 0, 1, and 3
+  // 3 => connected to 1 and 2
+  ```
+- Adjacency Matrix
+  ```js
+  const graph3 = [
+    [0, 0, 1, 0], // 0 => connected to 2
+    [0, 0, 1, 1], // 1 => connected to 2 and 3
+    [1, 1, 0, 1], // 2 => connected to 0, 1, and 3
+    [0, 1, 1, 0], // 3 => connected to 1 and 2
+  ];
+  ```
+
+<br />
+
+## When to use
+
+- Facebook uses it for their social network connection
+- Google maps uses it for the shorted route calculation
+
+### Good at:
+
+- Relationship
+
+### Bad at:
+
+- Scaling is hard
+
+<br />
+
+## Resources
+
+[Graph playground](https://visualgo.net/en/graphds)
