@@ -171,8 +171,8 @@ console.log(tree.lookup(6));
  * 1  6 15 170
  */
 
-function traverse(node: TreeNode | null) {
-  if (!node) return;
+function traverse(node: TreeNode | null): TreeNode | null {
+  if (!node) return null;
   const tree = new TreeNode(node.val);
   tree.left = node.left === null ? null : traverse(node.left);
   tree.right = node.right === null ? null : traverse(node.right);

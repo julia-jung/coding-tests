@@ -10,16 +10,16 @@
 
 ### Data Structures
 
-- [ ] Arrays
-- [ ] Hash Tables
-- [ ] Linked Lists
-- [ ] Stacks/Queues
-- [ ] Trees
-- [ ] Graphs
+- [x] Arrays
+- [x] Hash Tables
+- [x] Linked Lists
+- [x] Stacks/Queues
+- [x] Trees
+- [x] Graphs
 
 ### Algorithms
 
-- [ ] Recursion
+- [x] Recursion
 - [ ] Sorting
 - [ ] Searching
   - [ ] Linear & Binary Search

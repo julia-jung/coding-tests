@@ -70,7 +70,7 @@ Triple loop
 
 #### O(2^n): Exponential
 
-recursive algorithms that solves a problem of size N
+**recursive algorithms** that solves a problem of size N
 
 #### O(n!): Factorial
 
