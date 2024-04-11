@@ -4,14 +4,16 @@
 
 ### Time/Space Complexity
 
-| Algorithm        | Average Case | Worst Case |
-| ---------------- | ------------ | ---------- |
-| Lookup           | O(1)         | O(1)       |
-| Search           | O(n)         | O(n)       |
-| Append           | O(1)         | O(1)       |
-| Insertion        | O(n)         | O(n)       |
-| Deletion         | O(n)         | O(n)       |
-| Space Complexity | O(1)         | O(n)       |
+| Algorithm                | Average Case / Worst Case |
+| ------------------------ | ------------------------- |
+| Access                   | O(1)                      |
+| Search                   | O(n)                      |
+| \* Search (sorted array) | O(log N)                  |
+| Insertion                | O(n)                      |
+| \* Append                | **O(1)**                  |
+| Deletion                 | O(n)                      |
+| \* Deletion at the end   | **O(1)**                  |
+| Space Complexity         | O(1) / O(n)               |
 
 ### JS Built-in Methods
 
@@ -65,3 +67,9 @@ The only drawback is that whenever it's not at the absolute end of the array, we
 - [ ] [Rotate Array](https://leetcode.com/problems/rotate-array/description/)
 
 - [ ] [Longest Word](https://coderbyte.com/information/Longest%20Word)
+
+<br />
+
+## Recourses
+
+[Technical Interview Handbook - Array CheatSheet](https://www.techinterviewhandbook.org/algorithms/array/)\

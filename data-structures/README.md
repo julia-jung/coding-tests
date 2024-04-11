@@ -42,14 +42,15 @@ Each language has their data structures to hold different types of data. Some la
 - Deletion: Delete data from the collection of items
 - Sorting: have data that is sorted
 
-|                    | Access | Search | Insertion | Deletion | SpaceComplexity |
-| ------------------ | ------ | ------ | --------- | -------- | --------------- |
-| Array              | O(1)   | O(n)   | O(n)      | O(n)     | O(n)            |
-| Stack              | O(n)   | O(n)   | O(1)      | O(1)     | O(n)            |
-| Queue              | O(n)   | O(n)   | O(1)      | O(1)     | O(n)            |
-| Singly-Linked List | O(n)   | O(n)   | O(1)      | O(1)     | O(n)            |
-| Doubly-Linked List | O(n)   | O(n)   | O(1)      | O(1)     | O(n)            |
-| Hash Table         | N/A    | O(n)   | O(n)      | O(n)     | O(n)            |
+|                    | Access          | Search          | Insertion       | Deletion        | SpaceComplexity |
+| ------------------ | --------------- | --------------- | --------------- | --------------- | --------------- |
+| Array              | **O(1)**        | O(n)            | O(n)            | O(n)            | O(n)            |
+| Stack              | O(n)            | O(n)            | **O(1)**        | **O(1)**        | O(n)            |
+| Queue              | O(n)            | O(n)            | **O(1)**        | **O(1)**        | O(n)            |
+| Singly-Linked List | O(n)            | O(n)            | **O(1)**        | **O(1)**        | O(n)            |
+| Doubly-Linked List | O(n)            | O(n)            | **O(1)**        | **O(1)**        | O(n)            |
+| Hash Table         | N/A             | **O(1)** / O(n) | **O(1)** / O(n) | **O(1)** / O(n) | O(n)            |
+| Binary Search Tree | O(log N) / O(n) | O(log N) / O(n) | O(log N) / O(n) | O(log N) / O(n) | O(n)            |
 
 ## Resources
 

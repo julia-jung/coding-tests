@@ -37,6 +37,29 @@
 - Dynamic Programming
 - BFS + DFS (Searching)
 
+## Problem-solving Strategy
+
+### Divide and Conquer
+
+> solves probelm by breaking down a problem into smaller subproblems, solving each subproblem independenly, and then combining the solutions into a final solution for the original problem.
+
+- This strategy is often used in computer science and mathematics to solve complex problems efficiently
+- It is especially useful for problems that can be broken down into smaller, independent subproblems, as it enables parallelization and can reduce the overall tiem complexity of the algorithm.
+
+#### Basic steps
+
+1. Divide the problem into smaller subproblems.
+2. Conquer each subproblem by solving them **recursively or iteratively**.
+3. Combine the solutions of the subproblems into a solution for the original problem.
+
+### Brute-force
+
+### Greedy
+
+### Backtracking
+
+### Dynamic Programming
+
 ## Recources
 
 [Algorithms Cheat Sheet](https://zerotomastery.io/cheatsheets/data-structures-and-algorithms-cheat-sheet/#what-is-an-algorithm)
