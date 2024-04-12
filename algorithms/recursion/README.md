@@ -38,12 +38,12 @@ Then why would you want to do recursively?
 
 ## When to use
 
-### Good at:
+### Pros:
 
 - DRY
 - Readability
 
-### Bad at:
+### Cons:
 
 - Large Stack
 
@@ -72,6 +72,8 @@ Then why would you want to do recursively?
 - [ ] [46. Permutations](https://leetcode.com/problems/permutations/description/)
 - [ ] [37. Sudoku Solver](https://leetcode.com/problems/sudoku-solver/description/)
 - [ ] [Strobogrammatic Number II (LeetCode Premium)](https://leetcode.com/problems/strobogrammatic-number-ii/description/)
+
+<br />
 
 ## Recourses
 

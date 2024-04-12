@@ -5,6 +5,8 @@
 > Big O notation is the language we can use for talking about how long an algorithm takes to run(Time Complexity) or how much memeory it needs(Space Complexity).\
 > It tells which one is better than the other in terms of scale.
 
+<br />
+
 ## How to calculate
 
 ### Time Complexity
@@ -42,6 +44,8 @@
    `O(x^2 + 3x + 100 + x/2) => O(x^2)`\
    If x is small enough, 100 will be bigger than x^2 but when we say Big O, we care about scale.
 
+<br />
+
 ## Big Os
 
 #### O(1): Constant
@@ -58,7 +62,7 @@ for loops, while loops through n items
 
 #### O(n\*log N): Linearithmic
 
-usually sorting operations
+usually **sorting**(Merge sort, Quick sort) operations
 
 #### O(n^2): Quadratic
 
@@ -75,6 +79,8 @@ Triple loop
 #### O(n!): Factorial
 
 you are adding a loop for every element
+
+<br />
 
 ## Recources
 

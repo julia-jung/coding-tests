@@ -29,6 +29,8 @@ You can define the way you interact with the data and how it is arranged in RAM 
 
 Each language has their data structures to hold different types of data. Some languages has built-in data structures, for example, JAVA has Stack, LinkedList, PriorityQueue, etc..
 
+<br />
+
 ## Types of Data Structures
 
 ### [Data Structures Map](https://coggle.it/diagram/W5E5tqYlrXvFJPsq/t/master-the-interview-click-here-for-course-link/c25f98c73a03f5b1107cd0e2f4bce29c9d78e31655e55cb0b785d56f0036c9d1)
@@ -51,6 +53,8 @@ Each language has their data structures to hold different types of data. Some la
 | Doubly-Linked List | O(n)            | O(n)            | **O(1)**        | **O(1)**        | O(n)            |
 | Hash Table         | N/A             | **O(1)** / O(n) | **O(1)** / O(n) | **O(1)** / O(n) | O(n)            |
 | Binary Search Tree | O(log N) / O(n) | O(log N) / O(n) | O(log N) / O(n) | O(log N) / O(n) | O(n)            |
+
+<br />
 
 ## Resources
 

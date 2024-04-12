@@ -34,8 +34,14 @@
 
 - Recursion
 - Sorting
+- Searching
+  - Binary Search
+- Traversal
+  - BFS (Breadth First Search)
+  - DFS (Depth First Search)
 - Dynamic Programming
-- BFS + DFS (Searching)
+
+<br />
 
 ## Problem-solving Strategy
 
@@ -59,6 +65,8 @@
 ### Backtracking
 
 ### Dynamic Programming
+
+<br />
 
 ## Recources
 
