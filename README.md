@@ -22,7 +22,7 @@
 - [x] Recursion
 - [x] Sorting
 - [x] Searching
-  - [x]] Linear & Binary Search
+  - [x] Linear & Binary Search
   - [x] BFS & DFS
 - [x] Dynamic Programming
 
