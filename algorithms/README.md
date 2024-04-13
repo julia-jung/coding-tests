@@ -1,9 +1,5 @@
 # Algorithms
 
-## Understanding Algorithms
-
-### What is an Algorithm?
-
 > An algorithm is a set of instructions or a step-by-step procedure used to solve a problem or perform a specific task
 
 - Algorithms allow us to use data structures to perform an action to that data.
@@ -29,6 +25,8 @@
   - **Space Complexity** refers to the amount of memory or storage required by the algorithm.
 
 - With efficient algorithms, we can solve problems quickly and with fewer resources
+
+<br />
 
 ## Types of Algorithms
 

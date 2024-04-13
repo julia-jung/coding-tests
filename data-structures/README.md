@@ -1,16 +1,12 @@
 # Data Structures
 
-## Understanding Data Structures
-
-### What is a Data Structure?
-
-You can think of Data Structure as simply a file cabinet for a specific type of items.\
-We can put things in data structures, and get things out from data structures.\
-(e.g. Array, Object in Javascript)
+> You can think of Data Structure as simply a file cabinet for a specific type of items.\
+> We can put things in data structures, and get things out from data structures.\
+> (e.g. Array, Object in Javascript)
 
 ### Why they are important?
 
-#### A bit of a background
+#### Data is stored in Memory
 
 Computer has `CPU`, `RAM`, and `Storage`. Data on `Strage` is permanent. On the other hand, In `Ram`, you loose your data when you shut off the system. But, `CPU` gets data faster from the Memory than from the Storage.
 

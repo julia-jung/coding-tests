@@ -20,11 +20,11 @@
 ### Algorithms
 
 - [x] Recursion
-- [ ] Sorting
-- [ ] Searching
-  - [ ] Linear & Binary Search
-  - [ ] BFS & DFS
-- [ ] Dynamic Programming
+- [x] Sorting
+- [x] Searching
+  - [x]] Linear & Binary Search
+  - [x] BFS & DFS
+- [x] Dynamic Programming
 
 ## Resources
 

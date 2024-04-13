@@ -1,7 +1,5 @@
 # Big O
 
-## What is Big O
-
 > Big O notation is the language we can use for talking about how long an algorithm takes to run(Time Complexity) or how much memeory it needs(Space Complexity).\
 > It tells which one is better than the other in terms of scale.
 
@@ -9,18 +7,14 @@
 
 ## How to calculate
 
-### Time Complexity
-
-#### What can cause Time in a Function?
+### What cause Time Complexity?
 
 - Operations (+,-, \*, /)
 - Comparisons (<, >, ===)
 - Looping (for, while)
 - Outside Function call (function())
 
-### Space Complexity
-
-#### What causes Space Complexity?
+### What cause Space Complexity?
 
 - Variables
 - Data structures
@@ -48,35 +42,35 @@
 
 ## Big Os
 
-#### O(1): Constant
+### O(1): Constant
 
 no loops
 
-#### O(log N): Logarithmic
+### O(log N): Logarithmic
 
 usually searching algorithms have log n if they are sorted (Binary Search)
 
-#### O(n): Linear
+### O(n): Linear
 
 for loops, while loops through n items
 
-#### O(n\*log N): Linearithmic
+### O(n\*log N): Linearithmic
 
 usually **sorting**(Merge sort, Quick sort) operations
 
-#### O(n^2): Quadratic
+### O(n^2): Quadratic
 
 every element in a collection needs to be compared to ever other element. Two nested loops
 
-#### O(n^3): Cubic
+### O(n^3): Cubic
 
 Triple loop
 
-#### O(2^n): Exponential
+### O(2^n): Exponential
 
 **recursive algorithms** that solves a problem of size N
 
-#### O(n!): Factorial
+### O(n!): Factorial
 
 you are adding a loop for every element
 

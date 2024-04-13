@@ -1,8 +1,6 @@
 # Sorting Algorithms
 
-## Concept
-
-A Sorting Algorithm is used to arrange elements of an array/list in a specific order
+> A Sorting Algorithm is used to arrange elements of an array/list in a specific order
 
 ### Why Sorting is important?
 
@@ -22,7 +20,7 @@ While the sort() method is a connenient built-in method, it may not always be th
 - It may not provide the flexibility to customize sorting criteria
 - It may require additional memory to sort large dataset
 
-#### sort() in JS
+### sort() in JS
 
 It convert items into String and measure the charactercode
 

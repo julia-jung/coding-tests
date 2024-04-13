@@ -1,7 +1,5 @@
 # Recursion
 
-## Concept
-
 > Recursion is the process in which a function calls itself directly or indirectly. The function is called a Recursive Function.
 
 - Recursion is not exactly an algorithm but more of a fundamental concept in programming when learning about data structures and algorithms
