@@ -44,6 +44,8 @@ Then why would you want to do recursively?
 ### Cons:
 
 - Large Stack
+- Recursion can be very inefficient because it repeat the same calculation for same input
+  - This can be fixed in DP(**Memoization**)
 
 ### Consider using Recursion in a situation:
 

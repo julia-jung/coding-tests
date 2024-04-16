@@ -89,6 +89,94 @@
 
 - Look at the Time vs Space tradeoff. Sometimes storing extra state in memeory can help the time
 
+<br />
+
+## Top Interview Questions
+
+- [ ] #344 Reverse String
+- [ ] #412 Fizz Buzz
+- [ ] #136 Single Number
+- [ ] #104 Maximum Depth of Binary Tree
+- [ ] #283 Move Zeroes
+- [ ] #371 Sum of Two Integers
+- [ ] #206 Reverse Linked List
+- [ ] #171 Excel Sheet Column Number
+- [ ] #169 Majority Element
+- [ ] #13 Roman to Integer
+- [ ] #237 Delete Node in a Linked List
+- [ ] #122 Best Time to Buy and Sell Stock II
+- [ ] #242 Valid Anagram
+- [ ] #217 Contains Duplicate
+- [ ] #387 First Unique Character in a String
+- [ ] #108 Convert Sorted Array to Binary Search Tree
+- [ ] #268 Missing Number
+- [ ] #350 Intersection of Two Arrays II
+- [ ] #121 Best Time to Buy and Sell Stock
+- [ ] #21 Merge Two Sorted Lists
+- [ ] #202 Happy Number
+- [ ] #118 Pascal's Triangle
+- [ ] #70 Climbing Stairs
+- [ ] #101 Symmetric Tree
+- [ ] #53 Maximum Subarray
+- [ ] #326 Power of Three
+- [ ] #191 Number of 1 Bits
+- [ ] #198 House Robber
+- [ ] #66 Plus One
+- [ ] #1 Two Sum (Amazon)
+- [ ] #38 Count and Say
+- [ ] #26 Remove Duplicates from Sorted Array
+- [ ] #172 Factorial Trailing Zeroes
+- [ ] #20 Valid Parentheses
+- [ ] #141 Linked List Cycle
+- [ ] #234 Palindrome Linked List
+- [ ] #88 Merge Sorted Array
+- [ ] #155 Min Stack
+- [ ] #14 Longest Common Prefix
+- [ ] #160 Intersection of Two Linked Lists
+- [ ] #28 Implement strStr()
+- [ ] #69 Sqrt(x)
+- [ ] #190 Reverse Bits
+- [ ] #125 Valid Palindrome
+- [ ] #189 Rotate Array
+- [ ] #204 Count Primes
+- [ ] #7 Reverse Integer
+- [ ] #94 Binary Tree Inorder Traversal
+
+### Interview Questions by Amazon
+
+- [ ] #1 Two Sum
+- [ ] #2 Add Two Numbers
+- [ ] #3 Longest Substring Without Repeating Characters
+- [ ] #200 Number of Islands
+- [ ] #20 Valid Parentheses
+- [ ] #5 Longest Palindromic Substring
+- [ ] #138 Copy List with Random Pointer
+- [ ] #121 Best Time to Buy and Sell Stock
+- [ ] #21 Merge Two Sorted Lists
+- [ ] #70 Climbing Stairs
+
+### Interview Questions By Facebook
+
+- [ ] #1 Two Sum
+- [ ] #200 Number of Islands
+- [ ] #20 Valid Parentheses
+- [ ] #121 Best Time to Buy and Sell Stock
+- [ ] #56 Merge Intervals
+- [ ] #206 Reverse Linked List
+
+### Interview Questions By Google
+
+- [ ] #155 Min Stack
+- [ ] #200 Number of Islands
+- [ ] #20 Valid Parentheses
+- [ ] #42 Trapping Rain Water
+- [ ] #56 Merge Intervals
+- [ ] #681 Next Closest Time
+- [ ] #139 Word Break
+- [ ] #31 Next Permutation
+
+<br />
+
 ## Resources
 
 [How to: Work at Google — Example Coding/Engineering Interview](https://www.youtube.com/watch?v=XKu_SEDAykw)\
