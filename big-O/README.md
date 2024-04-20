@@ -117,7 +117,7 @@ Grows insanly rapidely
 
 <br />
 
-## Recources
+## Resources
 
 [ZTM - Big O Cheatsheet](https://zerotomastery.io/cheatsheets/big-o-cheat-sheet/?utm_source=udemy&utm_medium=coursecontent)\
 [bigocheatsheet.com](https://www.bigocheatsheet.com/)

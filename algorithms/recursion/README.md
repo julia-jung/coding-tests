@@ -75,7 +75,7 @@ Then why would you want to do recursively?
 
 <br />
 
-## Recourses
+## Resources
 
 [Technical Interview Handbook - Recursion CheatSheet](https://www.techinterviewhandbook.org/algorithms/recursion/)\
 [Tail call optimization](https://2ality.com/2015/06/tail-call-optimization.html)

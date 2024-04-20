@@ -66,6 +66,6 @@
 
 <br />
 
-## Recources
+## Resources
 
 [Algorithms Cheat Sheet](https://zerotomastery.io/cheatsheets/data-structures-and-algorithms-cheat-sheet/#what-is-an-algorithm)

@@ -157,7 +157,7 @@ Can be used to find the shortest path between two nodes in a graph.
 
 <br />
 
-## Recourses
+## Resources
 
 [Time/Space complexity in BFS and DFS](https://stackoverflow.com/questions/9844193/what-is-the-time-and-space-complexity-of-a-breadth-first-and-depth-first-tree-tr)\
 [BFS and DFS playground](https://visualgo.net/en/dfsbfs)

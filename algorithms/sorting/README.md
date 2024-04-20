@@ -202,7 +202,7 @@ V8 engine(used by Google Chrome and Node.js) starts by using Quick sort to parti
 
 <br />
 
-## Recourses
+## Resources
 
 [MDN - sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)\
 [MDN - localeCompare()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare)\

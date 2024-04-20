@@ -70,6 +70,6 @@ The only drawback is that whenever it's not at the absolute end of the array, we
 
 <br />
 
-## Recourses
+## Resources
 
 [Technical Interview Handbook - Array CheatSheet](https://www.techinterviewhandbook.org/algorithms/array/)\

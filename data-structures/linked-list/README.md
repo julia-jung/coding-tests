@@ -66,7 +66,7 @@ It references a location in memory, and obtaining the value stored at the locati
 
 <br />
 
-## Recources
+## Resources
 
 [Linked List playground](https://visualgo.net/en/list)\
 [Arrays vs Linked Lists](https://www.youtube.com/watch?v=DyG9S9nAlUM)

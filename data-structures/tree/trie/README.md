@@ -32,3 +32,9 @@ O(length of the word)
 - Usually Space-Inefficient. Tries rarely save space when compared to storing strings in a set.
   - ASCII characters in a string are one byte each. Each link between trie nodes is a pointer to an address—eight bytes on a 64-bit system. So, the overhead of linking nodes together often outweighs the savings from storing fewer characters.
 - Not Standard. Most languages don't come with a built-in trie implementation. You'll need to implement one yourself.
+
+<br />
+
+## Resources
+
+[All you need to know about Trie](https://leetcode.com/discuss/interview-question/4161389/All-you-need-to-know-about-trie)
